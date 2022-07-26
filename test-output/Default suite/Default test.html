@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 26 22:35:45 SGT 2022</td>
+<td>Started on:</td><td>Tue Jul 26 22:58:50 SGT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3574 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4593 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,11 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='frontend.OpenSite.failTest()'><b>failTest</b><br>Test class: frontend.OpenSite</td>
-<td><div><pre>java.lang.AssertionError: expected [2] but found [1]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at org.testng.Assert.assertEquals(Assert.java:917)
-	at frontend.OpenSite.failTest(OpenSite.java:52)
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [2] but found [1]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at frontend.OpenSite.failTest(OpenSite.java:57)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,15 +109,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1676086265", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1676086265'><pre>java.lang.AssertionError: expected [2] but found [1]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at org.testng.Assert.assertEquals(Assert.java:917)
-	at frontend.OpenSite.failTest(OpenSite.java:52)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2048777201", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2048777201'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [2] but found [1]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at frontend.OpenSite.failTest(OpenSite.java:57)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -151,7 +145,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>frontend.OpenSite@11dee337</td></tr>
+<td>frontend.OpenSite@6063d80a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -164,7 +158,7 @@ function toggleAllBoxes() {
 <td title='frontend.OpenSite.goToSite()'><b>goToSite</b><br>Test class: frontend.OpenSite</td>
 <td></td>
 <td>1</td>
-<td>frontend.OpenSite@11dee337</td></tr>
+<td>frontend.OpenSite@6063d80a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -175,8 +169,8 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='frontend.OpenSite.skipTest()'><b>skipTest</b><br>Test class: frontend.OpenSite</td>
-<td><div><pre>org.testng.SkipException: Skipping
-	at frontend.OpenSite.skipTest(OpenSite.java:46)
+<td><div><pre>org.testng.SkipException: Test is skipped purposely
+	at frontend.OpenSite.skipTest(OpenSite.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -205,9 +199,9 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1370822209", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1370822209'><pre>org.testng.SkipException: Skipping
-	at frontend.OpenSite.skipTest(OpenSite.java:46)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1522250355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1522250355'><pre>org.testng.SkipException: Test is skipped purposely
+	at frontend.OpenSite.skipTest(OpenSite.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -238,7 +232,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>frontend.OpenSite@11dee337</td></tr>
+<td>frontend.OpenSite@6063d80a</td></tr>
 </table><p>
 </body>
 </html>

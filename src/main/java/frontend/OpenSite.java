@@ -1,5 +1,7 @@
 package frontend;
 
+import static org.testng.Assert.assertEquals;
+
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.SkipException;
@@ -7,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import utilities.BaseDriver;
 import utilities.CreateReport;
@@ -19,8 +22,10 @@ public class OpenSite {
 	CreateReport createR = new CreateReport();
 	StopSystem stopS = new StopSystem(createR);
 	TakeScreenshot takeSS = new TakeScreenshot(baseD);
-
+	SoftAssert softAssert = new SoftAssert();
+	
 	String url = "https://wl003.the777888.com/";
+	String screenShotPath = ".\\QC_Automation_WEB\\Screenshots\\";
 
 	@BeforeClass
 	public void setupBrowser() {
@@ -37,17 +42,19 @@ public class OpenSite {
 			createR.setExtentTest().info("Site " + currentUrl + " is opened!");
 		}
 	}
-	
-	@Test(priority = 2)
+
+	@Test(priority = 3)
 	public void skipTest() throws InterruptedException {
 		createR.createTest("Test skipped");
-		throw new SkipException("Skipping");
+		throw new SkipException("Test is skipped purposely");
 	}
-	
-	@Test(priority = 3)
+
+	@Test(priority = 2)
 	public void failTest() throws InterruptedException {
 		createR.createTest("Test failed");
-		Assert.assertEquals(1, 2);
+		softAssert.assertEquals(1, 2);
+		createR.setExtentTest().info("Test is failed purposely");
+		softAssert.assertAll();
 	}
 
 	@AfterClass
@@ -56,7 +63,7 @@ public class OpenSite {
 		baseD.getDriver().quit();
 		stopS.createFinalReport();
 	}
-	
+
 	@AfterMethod
 	public void logCaseStatus(ITestResult result) {
 		String resultOfCaseStatus = result.getName();
@@ -69,7 +76,8 @@ public class OpenSite {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			takeSS = new TakeScreenshot(baseD);
 			takeSS.takeScreenShot(resultOfCaseStatus);
-			createR.setExtentTest().fail("<<<<< Step : " + resultOfCaseStatus + " is failed! >>>>>");
+			createR.setExtentTest().fail("<<<<< Step : " + resultOfCaseStatus + " is failed! >>>>>")
+			.addScreenCaptureFromPath("\\Eclipse-Workspace\\QC_Automation_WEB\\QC_Automation_WEB\\Screenshots\\" + resultOfCaseStatus + ".png");
 		}
 	}
 }

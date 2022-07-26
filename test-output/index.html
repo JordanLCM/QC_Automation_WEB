@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse--2101756182\testng-customsuite.xml</span>
+                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1635558655\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -158,14 +158,11 @@
                   <a name="failTest">
                   </a> <!-- failTest -->
                   <span class="method-name">failTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [2] but found [1]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at org.testng.Assert.assertEquals(Assert.java:917)
-	at frontend.OpenSite.failTest(OpenSite.java:52)
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [2] but found [1]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at frontend.OpenSite.failTest(OpenSite.java:57)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -211,8 +208,8 @@
                   <a name="skipTest">
                   </a> <!-- skipTest -->
                   <span class="method-name">skipTest</span>
-                  <div class="stack-trace">org.testng.SkipException: Skipping
-	at frontend.OpenSite.skipTest(OpenSite.java:46)
+                  <div class="stack-trace">org.testng.SkipException: Test is skipped purposely
+	at frontend.OpenSite.skipTest(OpenSite.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -265,7 +262,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse--2101756182\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1635558655\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -318,15 +315,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'goToSite')
 data.setCell(0, 2, 'frontend.OpenSite')
-data.setCell(0, 3, 1179);
+data.setCell(0, 3, 1170);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'failTest')
 data.setCell(1, 2, 'frontend.OpenSite')
-data.setCell(1, 3, 3);
+data.setCell(1, 3, 4);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'skipTest')
 data.setCell(2, 2, 'frontend.OpenSite')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -364,33 +361,33 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">goToSite</span>
-                <span class="method-start">1354 ms</span>
+                <span class="method-start">1365 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logCaseStatus([TestResult name=goToSite status=SUCCESS method=OpenSite.goToSite()[pri:0, instance:frontend.OpenSit...)</span>
-                <span class="method-start">2535 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">skipTest</span>
-                <span class="method-start">2539 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logCaseStatus([TestResult name=skipTest status=SKIP method=OpenSite.skipTest()[pri:2, instance:frontend.OpenSite@1...)</span>
-                <span class="method-start">2540 ms</span>
+                <span class="method-start">2537 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">failTest</span>
-                <span class="method-start">2541 ms</span>
+                <span class="method-start">2539 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logCaseStatus([TestResult name=failTest status=FAILURE method=OpenSite.failTest()[pri:3, instance:frontend.OpenSit...)</span>
+                <span class="method-name">logCaseStatus([TestResult name=failTest status=FAILURE method=OpenSite.failTest()[pri:2, instance:frontend.OpenSit...)</span>
                 <span class="method-start">2545 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">skipTest</span>
+                <span class="method-start">3193 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logCaseStatus([TestResult name=skipTest status=SKIP method=OpenSite.skipTest()[pri:3, instance:frontend.OpenSite@6...)</span>
+                <span class="method-start">3195 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">3204 ms</span>
+                <span class="method-start">3195 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
