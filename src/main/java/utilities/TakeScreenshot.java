@@ -11,7 +11,7 @@ public class TakeScreenshot {
 	
 	BaseDriver baseD = new BaseDriver();
 
-	String screenShotPath = "\\Eclipse-Workspace\\QC_Automation_WEB\\Screenshots\\";
+	String screenShotPath = ".\\src\\main\\resources\\Screenshots\\";
 
 	public void takeScreenShot(String fileName) {
 		File screenShot = ((TakesScreenshot) baseD.getDriver()).getScreenshotAs(OutputType.FILE);

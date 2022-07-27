@@ -6,8 +6,8 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class CreateReport {
 
-	String pathOfReport = ".\\QC_Automation_WEB\\Reports\\";
-
+	String pathOfReport = ".\\src\\main\\resources\\Reports\\";
+	
 	ExtentSparkReporter sparkReport;
 	ExtentReports extentReport;
 	ExtentTest extentTest;
