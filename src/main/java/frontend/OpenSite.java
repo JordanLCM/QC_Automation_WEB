@@ -21,8 +21,9 @@ public class OpenSite {
 	StopSystem stopS = new StopSystem(createR);
 	TakeScreenshot takeSS = new TakeScreenshot(baseD);
 	SoftAssert softAssert = new SoftAssert();
-	
+
 	String url = "https://wl003.the777888.com/";
+	String screenShotPath = "\\Eclipse WorkSpace Master\\QC_Automation_WEB\\src\\main\\resources\\Screenshots\\";
 
 	@BeforeClass
 	public void setupBrowser() {
@@ -37,6 +38,10 @@ public class OpenSite {
 		String currentUrl = baseD.getDriver().getCurrentUrl();
 		if (currentUrl.equals(url)) {
 			createR.setExtentTest().info("Site " + currentUrl + " is opened!");
+		} else {
+			softAssert.assertTrue(false);
+			createR.setExtentTest().info("Go to site is failed");
+			softAssert.assertAll();
 		}
 	}
 
@@ -73,8 +78,7 @@ public class OpenSite {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			takeSS = new TakeScreenshot(baseD);
 			takeSS.takeScreenShot(resultOfCaseStatus);
-			createR.setExtentTest().fail("<<<<< Step : " + resultOfCaseStatus + " is failed! >>>>>")
-			.addScreenCaptureFromPath("\\Eclipse WorkSpace Master\\QC_Automation_WEB\\src\\main\\resources\\Screenshots\\" + resultOfCaseStatus + ".png");
+			createR.setExtentTest().fail("<<<<< Step : " + resultOfCaseStatus + " is failed! >>>>>").addScreenCaptureFromPath(screenShotPath + resultOfCaseStatus + ".png");
 		}
 	}
 }

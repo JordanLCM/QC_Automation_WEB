@@ -1,146 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-26T22:58:50 SGT" name="Default suite" finished-at="2022-07-26T22:58:55 SGT" duration-ms="4593">
+  <suite started-at="2022-07-27T15:37:41 SGT" name="Default suite" finished-at="2022-07-27T15:37:58 SGT" duration-ms="17096">
     <groups>
     </groups>
-    <test started-at="2022-07-26T22:58:50 SGT" name="Default test" finished-at="2022-07-26T22:58:55 SGT" duration-ms="4593">
-      <class name="frontend.OpenSite">
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:frontend.OpenSite@6063d80a]" started-at="2022-07-26T22:58:50 SGT" name="setupBrowser" finished-at="2022-07-26T22:58:51 SGT" duration-ms="1355" status="PASS">
+    <test started-at="2022-07-27T15:37:41 SGT" name="Default test" finished-at="2022-07-27T15:37:58 SGT" duration-ms="17096">
+      <class name="frontend.Logout">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:41 SGT" name="setupBrowser" finished-at="2022-07-27T15:37:43 SGT" duration-ms="2169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="goToSite()[pri:0, instance:frontend.OpenSite@6063d80a]" started-at="2022-07-26T22:58:51 SGT" name="goToSite" finished-at="2022-07-26T22:58:53 SGT" duration-ms="1170" status="PASS">
+        <test-method signature="goToSite()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:43 SGT" name="goToSite" finished-at="2022-07-27T15:37:45 SGT" duration-ms="1579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToSite -->
-        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.OpenSite@6063d80a]" started-at="2022-07-26T22:58:53 SGT" name="logCaseStatus" finished-at="2022-07-26T22:58:53 SGT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:45 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:45 SGT" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=goToSite status=SUCCESS method=OpenSite.goToSite()[pri:0, instance:frontend.OpenSite@6063d80a] output={null}]]]>
+                <![CDATA[[TestResult name=goToSite status=SUCCESS method=Logout.goToSite()[pri:0, instance:frontend.Logout@2fb69ff6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logCaseStatus -->
-        <test-method signature="failTest()[pri:2, instance:frontend.OpenSite@6063d80a]" started-at="2022-07-26T22:58:53 SGT" name="failTest" finished-at="2022-07-26T22:58:53 SGT" duration-ms="4" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [2] but found [1]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [2] but found [1]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at frontend.OpenSite.failTest(OpenSite.java:57)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="closeAnnouncement()[pri:1, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:45 SGT" name="closeAnnouncement" finished-at="2022-07-27T15:37:49 SGT" duration-ms="3743" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- failTest -->
-        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.OpenSite@6063d80a]" started-at="2022-07-26T22:58:53 SGT" name="logCaseStatus" finished-at="2022-07-26T22:58:53 SGT" duration-ms="648" status="PASS">
+        </test-method> <!-- closeAnnouncement -->
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:49 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:49 SGT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=failTest status=FAILURE method=OpenSite.failTest()[pri:2, instance:frontend.OpenSite@6063d80a] output={null}]]]>
+                <![CDATA[[TestResult name=closeAnnouncement status=SUCCESS method=Logout.closeAnnouncement()[pri:1, instance:frontend.Logout@2fb69ff6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logCaseStatus -->
-        <test-method signature="skipTest()[pri:3, instance:frontend.OpenSite@6063d80a]" started-at="2022-07-26T22:58:53 SGT" name="skipTest" finished-at="2022-07-26T22:58:53 SGT" duration-ms="1" status="SKIP">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Test is skipped purposely]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Test is skipped purposely
-at frontend.OpenSite.skipTest(OpenSite.java:49)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+        <test-method signature="clickLoginOption()[pri:2, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:49 SGT" name="clickLoginOption" finished-at="2022-07-27T15:37:50 SGT" duration-ms="1099" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- skipTest -->
-        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.OpenSite@6063d80a]" started-at="2022-07-26T22:58:53 SGT" name="logCaseStatus" finished-at="2022-07-26T22:58:53 SGT" duration-ms="0" status="PASS">
+        </test-method> <!-- clickLoginOption -->
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:50 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:50 SGT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=skipTest status=SKIP method=OpenSite.skipTest()[pri:3, instance:frontend.OpenSite@6063d80a] output={null}]]]>
+                <![CDATA[[TestResult name=clickLoginOption status=SUCCESS method=Logout.clickLoginOption()[pri:2, instance:frontend.Logout@2fb69ff6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logCaseStatus -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:frontend.OpenSite@6063d80a]" started-at="2022-07-26T22:58:53 SGT" name="stopBrowser" finished-at="2022-07-26T22:58:55 SGT" duration-ms="1381" status="PASS">
+        <test-method signature="inputUserID()[pri:3, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:50 SGT" name="inputUserID" finished-at="2022-07-27T15:37:50 SGT" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputUserID -->
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:50 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:50 SGT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=inputUserID status=SUCCESS method=Logout.inputUserID()[pri:3, instance:frontend.Logout@2fb69ff6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logCaseStatus -->
+        <test-method signature="inputPassID()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:50 SGT" name="inputPassID" finished-at="2022-07-27T15:37:51 SGT" depends-on-methods="frontend.Logout.inputUserID" duration-ms="1262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputPassID -->
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:51 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:51 SGT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=inputPassID status=SUCCESS method=Logout.inputPassID()[pri:0, instance:frontend.Logout@2fb69ff6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logCaseStatus -->
+        <test-method signature="inputOTP()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:51 SGT" name="inputOTP" finished-at="2022-07-27T15:37:51 SGT" depends-on-methods="frontend.Logout.inputPassID" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputOTP -->
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:51 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:51 SGT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=inputOTP status=SUCCESS method=Logout.inputOTP()[pri:0, instance:frontend.Logout@2fb69ff6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logCaseStatus -->
+        <test-method signature="clickLoginButton()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:51 SGT" name="clickLoginButton" finished-at="2022-07-27T15:37:51 SGT" depends-on-methods="frontend.Logout.inputOTP" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLoginButton -->
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:51 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:51 SGT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickLoginButton status=SUCCESS method=Logout.clickLoginButton()[pri:0, instance:frontend.Logout@2fb69ff6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logCaseStatus -->
+        <test-method signature="verifyLogin()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:51 SGT" name="verifyLogin" finished-at="2022-07-27T15:37:53 SGT" depends-on-methods="frontend.Logout.clickLoginButton" duration-ms="1575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:53 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:53 SGT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=Logout.verifyLogin()[pri:0, instance:frontend.Logout@2fb69ff6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logCaseStatus -->
+        <test-method signature="clickLogoutButton()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:53 SGT" name="clickLogoutButton" finished-at="2022-07-27T15:37:56 SGT" depends-on-methods="frontend.Logout.verifyLogin" duration-ms="3423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLogoutButton -->
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:56 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:56 SGT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickLogoutButton status=SUCCESS method=Logout.clickLogoutButton()[pri:0, instance:frontend.Logout@2fb69ff6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logCaseStatus -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:56 SGT" name="stopBrowser" finished-at="2022-07-27T15:37:58 SGT" duration-ms="1788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
-      </class> <!-- frontend.OpenSite -->
+      </class> <!-- frontend.Logout -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

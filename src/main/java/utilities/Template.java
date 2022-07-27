@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class template {
+public class Template {
 
 	BaseDriver baseD = new BaseDriver();
 	CreateReport createR = new CreateReport();

@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="frontend.OpenSite">
+      <class name="frontend.Register">
         <methods>
           <include name="logCaseStatus"/>
-          <include name="skipTest"/>
-          <include name="failTest"/>
-          <include name="setupBrowser"/>
+          <include name="clickRegisterOption"/>
           <include name="stopBrowser"/>
+          <include name="setupBrowser"/>
         </methods>
-      </class> <!-- frontend.OpenSite -->
+      </class> <!-- frontend.Register -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
