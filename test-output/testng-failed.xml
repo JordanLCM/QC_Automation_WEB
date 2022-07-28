@@ -7,8 +7,13 @@
         <methods>
           <include name="logCaseStatus"/>
           <include name="clickRegisterOption"/>
+          <include name="inputUserID"/>
+          <include name="verifyRegister"/>
+          <include name="inputCaptcha"/>
           <include name="stopBrowser"/>
           <include name="setupBrowser"/>
+          <include name="inputPassID"/>
+          <include name="clickRegisterButton"/>
         </methods>
       </class> <!-- frontend.Register -->
     </classes>

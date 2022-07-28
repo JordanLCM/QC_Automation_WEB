@@ -22,12 +22,13 @@ public class OpenSite {
 	TakeScreenshot takeSS = new TakeScreenshot(baseD);
 	SoftAssert softAssert = new SoftAssert();
 
+	String reportName = "Open site test report";
 	String url = "https://wl003.the777888.com/";
 	String screenShotPath = "\\Eclipse WorkSpace Master\\QC_Automation_WEB\\src\\main\\resources\\Screenshots\\";
 
 	@BeforeClass
 	public void setupBrowser() {
-		createR.generateReport("Open site test report");
+		createR.generateReport(reportName);
 		baseD.setDriverProperty();
 	}
 

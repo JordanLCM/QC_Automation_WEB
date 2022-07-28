@@ -1,156 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-27T15:37:41 SGT" name="Default suite" finished-at="2022-07-27T15:37:58 SGT" duration-ms="17096">
+  <suite started-at="2022-07-28T10:42:16 SGT" name="Default suite" finished-at="2022-07-28T10:42:36 SGT" duration-ms="20066">
     <groups>
     </groups>
-    <test started-at="2022-07-27T15:37:41 SGT" name="Default test" finished-at="2022-07-27T15:37:58 SGT" duration-ms="17096">
-      <class name="frontend.Logout">
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:41 SGT" name="setupBrowser" finished-at="2022-07-27T15:37:43 SGT" duration-ms="2169" status="PASS">
+    <test started-at="2022-07-28T10:42:16 SGT" name="Default test" finished-at="2022-07-28T10:42:36 SGT" duration-ms="20066">
+      <class name="frontend.Register">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:16 SGT" name="setupBrowser" finished-at="2022-07-28T10:42:18 SGT" duration-ms="1882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="goToSite()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:43 SGT" name="goToSite" finished-at="2022-07-27T15:37:45 SGT" duration-ms="1579" status="PASS">
+        <test-method signature="goToSite()[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:18 SGT" name="goToSite" finished-at="2022-07-28T10:42:20 SGT" duration-ms="1855" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToSite -->
-        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:45 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:45 SGT" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:20 SGT" name="logCaseStatus" finished-at="2022-07-28T10:42:20 SGT" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=goToSite status=SUCCESS method=Logout.goToSite()[pri:0, instance:frontend.Logout@2fb69ff6] output={null}]]]>
+                <![CDATA[[TestResult name=goToSite status=SUCCESS method=Register.goToSite()[pri:0, instance:frontend.Register@15fc442] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logCaseStatus -->
-        <test-method signature="closeAnnouncement()[pri:1, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:45 SGT" name="closeAnnouncement" finished-at="2022-07-27T15:37:49 SGT" duration-ms="3743" status="PASS">
+        <test-method signature="closeAnnouncement()[pri:1, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:20 SGT" name="closeAnnouncement" finished-at="2022-07-28T10:42:24 SGT" duration-ms="3712" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeAnnouncement -->
-        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:49 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:49 SGT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:24 SGT" name="logCaseStatus" finished-at="2022-07-28T10:42:24 SGT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=closeAnnouncement status=SUCCESS method=Logout.closeAnnouncement()[pri:1, instance:frontend.Logout@2fb69ff6] output={null}]]]>
+                <![CDATA[[TestResult name=closeAnnouncement status=SUCCESS method=Register.closeAnnouncement()[pri:1, instance:frontend.Register@15fc442] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logCaseStatus -->
-        <test-method signature="clickLoginOption()[pri:2, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:49 SGT" name="clickLoginOption" finished-at="2022-07-27T15:37:50 SGT" duration-ms="1099" status="PASS">
+        <test-method signature="clickRegisterOption()[pri:2, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:24 SGT" name="clickRegisterOption" finished-at="2022-07-28T10:42:25 SGT" duration-ms="1085" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickLoginOption -->
-        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:50 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:50 SGT" duration-ms="0" status="PASS">
+        </test-method> <!-- clickRegisterOption -->
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:25 SGT" name="logCaseStatus" finished-at="2022-07-28T10:42:25 SGT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickLoginOption status=SUCCESS method=Logout.clickLoginOption()[pri:2, instance:frontend.Logout@2fb69ff6] output={null}]]]>
+                <![CDATA[[TestResult name=clickRegisterOption status=SUCCESS method=Register.clickRegisterOption()[pri:2, instance:frontend.Register@15fc442] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logCaseStatus -->
-        <test-method signature="inputUserID()[pri:3, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:50 SGT" name="inputUserID" finished-at="2022-07-27T15:37:50 SGT" duration-ms="171" status="PASS">
+        <test-method signature="inputUserID()[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:25 SGT" name="inputUserID" finished-at="2022-07-28T10:42:25 SGT" depends-on-methods="frontend.Register.clickRegisterOption" duration-ms="153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputUserID -->
-        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:50 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:50 SGT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:25 SGT" name="logCaseStatus" finished-at="2022-07-28T10:42:25 SGT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=inputUserID status=SUCCESS method=Logout.inputUserID()[pri:3, instance:frontend.Logout@2fb69ff6] output={null}]]]>
+                <![CDATA[[TestResult name=inputUserID status=SUCCESS method=Register.inputUserID()[pri:0, instance:frontend.Register@15fc442] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logCaseStatus -->
-        <test-method signature="inputPassID()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:50 SGT" name="inputPassID" finished-at="2022-07-27T15:37:51 SGT" depends-on-methods="frontend.Logout.inputUserID" duration-ms="1262" status="PASS">
+        <test-method signature="inputPassID()[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:25 SGT" name="inputPassID" finished-at="2022-07-28T10:42:26 SGT" depends-on-methods="frontend.Register.inputUserID" duration-ms="1247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputPassID -->
-        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:51 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:51 SGT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:26 SGT" name="logCaseStatus" finished-at="2022-07-28T10:42:26 SGT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=inputPassID status=SUCCESS method=Logout.inputPassID()[pri:0, instance:frontend.Logout@2fb69ff6] output={null}]]]>
+                <![CDATA[[TestResult name=inputPassID status=SUCCESS method=Register.inputPassID()[pri:0, instance:frontend.Register@15fc442] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logCaseStatus -->
-        <test-method signature="inputOTP()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:51 SGT" name="inputOTP" finished-at="2022-07-27T15:37:51 SGT" depends-on-methods="frontend.Logout.inputPassID" duration-ms="103" status="PASS">
+        <test-method signature="inputCaptcha()[pri:3, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:26 SGT" name="inputCaptcha" finished-at="2022-07-28T10:42:26 SGT" depends-on-methods="frontend.Register.inputPassID" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- inputOTP -->
-        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:51 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:51 SGT" duration-ms="0" status="PASS">
+        </test-method> <!-- inputCaptcha -->
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:26 SGT" name="logCaseStatus" finished-at="2022-07-28T10:42:26 SGT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=inputOTP status=SUCCESS method=Logout.inputOTP()[pri:0, instance:frontend.Logout@2fb69ff6] output={null}]]]>
+                <![CDATA[[TestResult name=inputCaptcha status=SUCCESS method=Register.inputCaptcha()[pri:3, instance:frontend.Register@15fc442] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logCaseStatus -->
-        <test-method signature="clickLoginButton()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:51 SGT" name="clickLoginButton" finished-at="2022-07-27T15:37:51 SGT" depends-on-methods="frontend.Logout.inputOTP" duration-ms="73" status="PASS">
+        <test-method signature="inputReferral()[pri:4, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:26 SGT" name="inputReferral" finished-at="2022-07-28T10:42:27 SGT" depends-on-methods="frontend.Register.inputCaptcha" duration-ms="1187" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickLoginButton -->
-        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:51 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:51 SGT" duration-ms="1" status="PASS">
+        </test-method> <!-- inputReferral -->
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:27 SGT" name="logCaseStatus" finished-at="2022-07-28T10:42:27 SGT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickLoginButton status=SUCCESS method=Logout.clickLoginButton()[pri:0, instance:frontend.Logout@2fb69ff6] output={null}]]]>
+                <![CDATA[[TestResult name=inputReferral status=SUCCESS method=Register.inputReferral()[pri:4, instance:frontend.Register@15fc442] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logCaseStatus -->
-        <test-method signature="verifyLogin()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:51 SGT" name="verifyLogin" finished-at="2022-07-27T15:37:53 SGT" depends-on-methods="frontend.Logout.clickLoginButton" duration-ms="1575" status="PASS">
+        <test-method signature="inputDateOfBirth()[pri:5, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:27 SGT" name="inputDateOfBirth" finished-at="2022-07-28T10:42:28 SGT" depends-on-methods="frontend.Register.inputPassID" duration-ms="840" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:53 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:53 SGT" duration-ms="1" status="PASS">
+        </test-method> <!-- inputDateOfBirth -->
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:28 SGT" name="logCaseStatus" finished-at="2022-07-28T10:42:28 SGT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=Logout.verifyLogin()[pri:0, instance:frontend.Logout@2fb69ff6] output={null}]]]>
+                <![CDATA[[TestResult name=inputDateOfBirth status=SUCCESS method=Register.inputDateOfBirth()[pri:5, instance:frontend.Register@15fc442] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logCaseStatus -->
-        <test-method signature="clickLogoutButton()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:53 SGT" name="clickLogoutButton" finished-at="2022-07-27T15:37:56 SGT" depends-on-methods="frontend.Logout.verifyLogin" duration-ms="3423" status="PASS">
+        <test-method signature="clickRegisterButton()[pri:6, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:28 SGT" name="clickRegisterButton" finished-at="2022-07-28T10:42:28 SGT" depends-on-methods="frontend.Register.inputCaptcha" duration-ms="67" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickLogoutButton -->
-        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:56 SGT" name="logCaseStatus" finished-at="2022-07-27T15:37:56 SGT" duration-ms="0" status="PASS">
+        </test-method> <!-- clickRegisterButton -->
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:28 SGT" name="logCaseStatus" finished-at="2022-07-28T10:42:28 SGT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickLogoutButton status=SUCCESS method=Logout.clickLogoutButton()[pri:0, instance:frontend.Logout@2fb69ff6] output={null}]]]>
+                <![CDATA[[TestResult name=clickRegisterButton status=SUCCESS method=Register.clickRegisterButton()[pri:6, instance:frontend.Register@15fc442] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logCaseStatus -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:frontend.Logout@2fb69ff6]" started-at="2022-07-27T15:37:56 SGT" name="stopBrowser" finished-at="2022-07-27T15:37:58 SGT" duration-ms="1788" status="PASS">
+        <test-method signature="verifyRegister()[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:28 SGT" name="verifyRegister" finished-at="2022-07-28T10:42:35 SGT" depends-on-methods="frontend.Register.clickRegisterButton" duration-ms="6159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegister -->
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:35 SGT" name="logCaseStatus" finished-at="2022-07-28T10:42:35 SGT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRegister status=SUCCESS method=Register.verifyRegister()[pri:0, instance:frontend.Register@15fc442] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logCaseStatus -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:frontend.Register@15fc442]" started-at="2022-07-28T10:42:35 SGT" name="stopBrowser" finished-at="2022-07-28T10:42:36 SGT" duration-ms="1676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
-      </class> <!-- frontend.Logout -->
+      </class> <!-- frontend.Register -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

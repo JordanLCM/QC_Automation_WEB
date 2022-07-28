@@ -25,13 +25,14 @@ public class Login {
 	TakeScreenshot takeSS = new TakeScreenshot(baseD);
 	SoftAssert softAssert = new SoftAssert();
 
+	String reportName = "Login test report";
 	String url = "https://wl003.the777888.com/";
 	String screenShotPath = "\\Eclipse WorkSpace Master\\QC_Automation_WEB\\src\\main\\resources\\Screenshots\\";
 	String currentUrl;
 
 	@BeforeClass
 	public void setupBrowser() {
-		createR.generateReport("Login test report");
+		createR.generateReport(reportName);
 		baseD.setDriverProperty();
 	}
 
@@ -187,8 +188,6 @@ public class Login {
 		}
 	}
 
-	String loggedInAccountUserID;
-
 	@Test(dependsOnMethods = { "clickLoginButton" })
 	public void verifyLogin() throws InterruptedException {
 		createR.createTest("Verify Login");
@@ -196,6 +195,10 @@ public class Login {
 		WebElement qctester01010101 = baseD.getDriver().findElement(By.xpath("//body/header/div[@class='header_top_outside']/div[@class='header_top']/div[@class='header_bottom_right']/div/div[@class='header_bottom_after_login']/div[1]/a[1]"));
 		if (qctester01010101.isDisplayed()) {
 			createR.setExtentTest().info("Logged in to userID " + userID);
+			Thread.sleep(2000);
+			takeSS = new TakeScreenshot(baseD);
+			takeSS.takeScreenShot(userID + " passed");
+			createR.setExtentTest().info("Logged out of userID " + userID).addScreenCaptureFromPath(screenShotPath + userID + " passed" + ".png");
 		} else {
 			softAssert.assertTrue(false);
 			createR.setExtentTest().info("Click Login Option is failed");
@@ -222,7 +225,7 @@ public class Login {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			takeSS = new TakeScreenshot(baseD);
 			takeSS.takeScreenShot(resultOfCaseStatus);
-			createR.setExtentTest().fail("<<<<< Step : " + resultOfCaseStatus + " is failed! >>>>>").addScreenCaptureFromPath(screenShotPath + resultOfCaseStatus + ".png");
+			createR.setExtentTest().fail("<<<<< Step : " + resultOfCaseStatus + " is failed! >>>>>").addScreenCaptureFromPath("\\Eclipse WorkSpace Master\\QC_Automation_WEB\\src\\main\\resources\\Screenshots\\" + resultOfCaseStatus + ".png");
 		}
 	}
 }
